@@ -25,6 +25,9 @@ And it responds:
 @monitorbot Boss, I started to monitor www.axcoto.com
 ```
 
+Note that during the tutorial, I use the bot name `watchdog_bot`. You
+have to replace it with your own name because the name is taken by me
+:D.
 
 # Step 1. Get the Telegram Token:
 
@@ -50,4 +53,14 @@ package main
 import (
 
 )
+```
+
+Telegram has two ways to get updates. The simpler way is `getUpdates`
+which use long polling. We make a HTTP request and Telegram blocked
+until we get new updates or the timeout expired. The second way is using
+webhook: we tell Telegram to ping an specified URL whenever a message is
+sent to our bot. To keep thing simple, let's use long polling.
+
+
+```
 ```
