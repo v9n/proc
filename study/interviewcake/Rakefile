@@ -1,0 +1,16 @@
+require 'rake/testtask'
+
+task :run do
+  Dir.foreach('.') do |f|
+    
+  end
+end
+
+Rake::TestTask.new do |t|
+  t.libs << "spec"
+  t.test_files = FileList["*/spec.rb"]
+end
+
+task :download do
+  puts "https://www.interviewcake.com/question/find-duplicate-optimize-for-space"
+end
