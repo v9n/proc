@@ -1,0 +1,3 @@
+[submodule "dotfiles/janus"]
+	path = dotfiles/janus
+	url = https://github.com/carlhuda/janus.git
