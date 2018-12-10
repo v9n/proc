@@ -1,0 +1,28 @@
+:set wrap
+:set mouse=nicr
+
+autocmd filetype crontab setlocal nobackup nowritebackup
+
+"Make CtrlP faster
+"By caching its then using silver search
+"http://blog.patspam.com/2014/super-fast-ctrlp
+"http://stackoverflow.com/questions/21346068/slow-performance-on-ctrlp-it-doesnt-work-to-ignore-some-folders
+let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
+let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
+      \ --ignore .git
+      \ --ignore .svn
+      \ --ignore .hg
+      \ --ignore .DS_Store
+      \ --ignore ._builds
+      \ --ignore ._steps
+      \ --ignore ._projects
+      \ --ignore "**/*.pyc"
+      \ -g ""'
+
+"Enable per project vimrc
+set exrc
+set secure
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,node_modules/*,*/vendor/*,*/_build/*
+"let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|_build\|vendor'
+"let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
