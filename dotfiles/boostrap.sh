@@ -5,6 +5,7 @@ ITEMS=".oh-my-zsh \
   .vimrc.after\
   .janus
   .tmux.conf
+  .gitconfig
 "
 
 for f in $ITEMS; do
