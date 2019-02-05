@@ -1,3 +1,9 @@
 [submodule "dotfiles/janus"]
 	path = dotfiles/janus
 	url = https://github.com/carlhuda/janus.git
+[submodule "dotfiles/.ajnus/vim-reason-plus"]
+	path = dotfiles/.ajnus/vim-reason-plus
+	url = git@github.com:reasonml-editor/vim-reason-plus.git
+[submodule "dotfiles/.janus/vim-reason-plus"]
+	path = dotfiles/.janus/vim-reason-plus
+	url = git@github.com:reasonml-editor/vim-reason-plus.git
