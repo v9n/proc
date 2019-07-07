@@ -61,6 +61,7 @@ ZSH_THEME="spaceship"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  gitfast
   kubectl
 )
 
@@ -96,7 +97,14 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin:$HOME/bin:"
+export PATH="$PATH:$HOME/.rvm/bin:$HOME/bin:$HOME/go/bin:"
 source $HOME/.cargo/env
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+export EDITOR=vi
+alias tm=tmuxinator
+# fnm
+eval "$(fnm env --multi)"
+
+alias t=tmux

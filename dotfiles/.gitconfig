@@ -1,3 +1,5 @@
 [user]
 	name = Vinh
 	email = vinh@axcoto.com
+[push]
+	default = current
