@@ -7,3 +7,6 @@
 [submodule "dotfiles/.janus/vim-reason-plus"]
 	path = dotfiles/.janus/vim-reason-plus
 	url = git@github.com:reasonml-editor/vim-reason-plus.git
+[submodule "dotfiles/.janus/dhall-vim"]
+	path = dotfiles/.janus/dhall-vim
+	url = https://github.com/vmchale/dhall-vim.git
