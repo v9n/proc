@@ -105,7 +105,7 @@ source $HOME/.cargo/env
 export EDITOR=vi
 alias tm=tmuxinator
 # fnm
-eval "$(fnm env --multi)"
+# eval "$(fnm env --multi)"
 
 alias t=tmux
 
@@ -119,4 +119,17 @@ fi
 alias dc=docker-compose
 
 # flutter
-export PATH="$PATH:$HOME/src/flutter/bin"
+export PATH="$HOME/.local/bin:$PATH:$HOME/src/flutter/bin:$HOME/Sites/acme.sh/bin/"
+alias tf=terraform
+alias g=git
+alias t=tmux
+alias tx=tmuxinator
+
+export KUBECONFIG=~/.kube/yeo
+
+eval "$(zoxide init zsh)"
+
+alias ltdev="ssh vinh@192.168.44.1"
+
+alias b=baja
+alias o=open
