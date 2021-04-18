@@ -125,7 +125,7 @@ alias g=git
 alias t=tmux
 alias tx=tmuxinator
 
-export KUBECONFIG=~/.kube/yeo
+#export KUBECONFIG=~/.kube/yeo
 
 eval "$(zoxide init zsh)"
 
@@ -133,3 +133,6 @@ alias ltdev="ssh vinh@192.168.44.1"
 
 alias b=baja
 alias o=open
+
+HISTSIZE=10000000000000
+SAVEHIST=10000000000000
